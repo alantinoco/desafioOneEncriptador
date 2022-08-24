@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: #E5E5E5;
 }
 
 hearder {
@@ -20,16 +20,23 @@ main {
 
 .inserir-texto {
     margin-top: 90px;
+    background-color: #E5E5E5;
+    border: none;
 }
 
 .mensagem {
-    position: fixed;
-    margin-top: 20px;
-    margin-left: 90px;
-    background-image: url("");
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    left: 800px;
+    top: 40px;
+    border-radius: 32px;
+    background: #FFFFFF;
+    background-image: url("/img/boneco.png");
     background-repeat: no-repeat;
     background-position: 18px;
     background-size: 300px;
+    
 }
 
 .botoes {
@@ -39,12 +46,31 @@ main {
 }
 
 .encriptar {
-    background-color: #fff;
-    color: #000;
+    background-color: darkblue;
+    color: #FFFFFF;
+    padding: 24px;
+    font-size: 16px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    gap: 8px;
+    border: solid darkblue;
 }
 
 .desencriptar {
     margin-left: 30px;
+    padding: 24px;
+    font-size: 16px;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    gap: 8px;
+    border: solid darkblue;
+    color: darkblue;
+    background-color: #E5E5E5;
+  
+
+
 }
 
 .informacao {
