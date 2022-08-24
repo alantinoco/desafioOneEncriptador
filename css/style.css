@@ -1,0 +1,52 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+body {
+    background-color: #FFF;
+}
+
+hearder {
+    margin-left: 40px;
+}
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px ;
+}
+
+.inserir-texto {
+    margin-top: 90px;
+}
+
+.mensagem {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.encriptar {
+    background-color: #fff;
+    color: #000;
+}
+
+.desencriptar {
+    margin-left: 30px;
+}
+
+.informacao {
+    font-size: 15px;
+}
