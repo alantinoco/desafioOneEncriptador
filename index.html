@@ -17,15 +17,16 @@
 
     <main class="box">
         <section>
-            <textarea class="inserir-texto" name="" id="" cols="30" rows="10" placeholder="Digite o texto ..."></textarea>
+            <textarea id="textoInserido" class="inserir-texto" name="" cols="30" rows="10" placeholder="Digite o texto ..."></textarea>
             <div class="botoes">
-                <button class="encriptar">Criptografar</button>
-                <button class="desencriptar">Desencriptografar</button>
+                <button class="encriptar" onclick="botaoCriptografar()">Criptografar</button>
+                <button class="desencriptar" onclick="botaoDescriptografar()">Descriptografar</button>
             </div>
         </section>
         
         <section>
-            <textarea class="mensagem" name="" id="" cols="30" rows="10"></textarea>
+            <textarea class="" name="" id="resultado" cols="30" rows="10"></textarea>
+            <button class="copiar">Copiar</button>
         </section>
     </main>
     

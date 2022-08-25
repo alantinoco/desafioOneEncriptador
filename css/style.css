@@ -32,10 +32,11 @@ main {
     top: 40px;
     border-radius: 32px;
     background: #FFFFFF;
-    background-image: url("/img/boneco.png");
+    background-image: url("");
     background-repeat: no-repeat;
-    background-position: 18px;
-    background-size: 300px;
+    background-position: center;
+    background-size: 200px;
+    text-align: center;
     
 }
 

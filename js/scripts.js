@@ -1,100 +1,74 @@
-var mensagem = "alan tinoco dos santos"
-var mensagemADesencriptar = "1l1n t3n%c% d%s s1nt%s"
+// CRIPTOGRAFAR
+const mensagem = document.getElementById("resultado");
 
-encriptar = (mensagem) =>{
+function botaoCriptografar(texto) {
+    const textoInserido = document.getElementById("textoInserido").value;
+    criptografar(textoInserido)
+}
+
+function criptografar(textoInserido) {
     
-    let mensagemEncriptada;
+    const textInseridoArray = textoInserido.split("");
 
-    const mensagemArray = mensagem.split("");
+    var textoCriptografadoArray = [];
 
-    var mensagemEncriptadaArray = [];
-
-    for (i = 0 ; i < mensagemArray.length; i++){
+    for (i = 0 ; i < textInseridoArray.length; i++){
         
         let letra;
 
-        switch (mensagemArray[i]) {
+        switch (textInseridoArray[i]) {
             case 'a':
-                letra = "1";
+                letra = "ai";
                 break;
             case 'e':
-                letra = "@";
+                letra = "enter";
                 break;
             case 'i':
-                letra = "3";
+                letra = "imes";
                 break;
             case 'o':
-                letra = "%";
+                letra = "ober";
                 break;
             case 'u':
-                letra = "5";
+                letra = "ufat";
                 break;
 
             default:
-                letra = mensagemArray[i];
+                letra = textInseridoArray[i];
                 break;
         }
 
-        mensagemEncriptadaArray.push(letra);
-        
-
+        textoCriptografadoArray.push(letra); 
     }
 
+    textoCriptografado = textoCriptografadoArray.join("");
 
-    mensagemEncriptada = mensagemEncriptadaArray.join("");
-    console.log("Mensagem Encriptada: ", mensagemEncriptada);
-
+    document.getElementById("resultado").innerHTML = textoCriptografado;
+    
 }
 
 
-encriptar(mensagem);
+// DESCRIPTOGRAFAR
+
+function botaoDescriptografar(texto) {
+    textoInserido = document.getElementById("textoInserido").value;
+    descriptografar(textoInserido);
+}
 
 
+function descriptografar(textoInserido) {
 
-desencriptar = (mensagemADesencriptar) => {
+    let texto = textoInserido;
     
-    let mensagemDesencriptada;
-
-    const mensagemADesencriptarArray = mensagemADesencriptar.split("");
-
-    let mensagemDesencriptadaArray = [];
-
-    for (let i = 0; i < mensagemADesencriptarArray.length; i++) {
-        
-        let letraADesencriptar; 
-
-        switch (mensagemADesencriptarArray[i]) {
-            case '1':
-                letraADesencriptar = "a";
-                break;
-            case '@':
-                letraADesencriptar = "e";
-                break;
-            case '3':
-                letraADesencriptar = "i";
-                break;
-            case '%':
-                letraADesencriptar = "o";
-                break;
-            case '5':
-                letraADesencriptar = "u";
-                break;
-
-            default:
-                letraADesencriptar = mensagemADesencriptarArray[i];
-                break;
-        }
-
-        mensagemDesencriptadaArray.push(letraADesencriptar);
-        
-        
+    if (texto.includes("ai" || "enter" || "imes" || "ober" || "ufat")) {
+        texto = texto.replaceAll("ai", "a");
+        texto = texto.replaceAll("enter", "e");
+        texto = texto.replaceAll("imes", "i");
+        texto = texto.replaceAll("ober", "o");
+        texto = texto.replaceAll("ufat", "u");
+        document.getElementById("resultado").innerHTML = texto;
+    }  
+             
     }
 
 
-    mensagemDesencriptada = mensagemDesencriptadaArray.join("");
-    console.log("Mensagem Desencriptada: ", mensagemDesencriptada);
-    
-
-}
-
-desencriptar(mensagemADesencriptar);
