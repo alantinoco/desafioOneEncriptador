@@ -25,19 +25,14 @@ main {
 }
 
 .mensagem {
-    position: absolute;
-    width: 350px;
-    height: 600px;
-    left: 800px;
-    top: 40px;
-    border-radius: 32px;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 90px;
     background: #FFFFFF;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px;
-    text-align: center;
-    
+    background-position: 18px;
+    background-size: 300px;
+    border-radius: 5%;
+    border: none;
 }
 
 .botoes {

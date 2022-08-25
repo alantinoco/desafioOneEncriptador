@@ -8,7 +8,7 @@ function botaoCriptografar(texto) {
 
 function criptografar(textoInserido) {
     
-    const textInseridoArray = textoInserido.split("");
+    let textInseridoArray = textoInserido.toLowerCase().split("");
 
     var textoCriptografadoArray = [];
 
@@ -58,7 +58,7 @@ function botaoDescriptografar(texto) {
 
 function descriptografar(textoInserido) {
 
-    let texto = textoInserido;
+    let texto = textoInserido.toLowerCase();
     
     if (texto.includes("ai" || "enter" || "imes" || "ober" || "ufat")) {
         texto = texto.replaceAll("ai", "a");
